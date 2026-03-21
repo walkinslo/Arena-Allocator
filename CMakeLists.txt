@@ -4,6 +4,7 @@ project(arena_allocator CXX)
 set(CMAKE_CXX_STANDART 20)
 set(CMAKE_CXX_STANDART_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 add_library(arena STATIC src/arena_allocator.cpp)
 
