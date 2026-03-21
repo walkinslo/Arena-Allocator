@@ -14,7 +14,7 @@ public:
     std::size_t space = m_capacity - m_offset;
     void *aligned_ptr = current_ptr;
 
-    if (std::align(alignment, size, aligned_ptr, space) != nullptr) {
+    if (std::align(alignment, size, aligned_ptr, space) == nullptr) {
       throw std::bad_alloc();
     }
 
